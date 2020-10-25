@@ -1,0 +1,648 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <title>Marco Bellan's CV</title>
+        <!--Let browser know website is optimized for mobile-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+        <style type="text/css"> 
+            .card-panel {           
+                margin-bottom: 25px;
+                margin-top: 25px;
+            }
+        </style>
+    </head>
+
+    <body class="light-blue">
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+
+        <div class="fixed-action-btn">
+            <a target="_blank" href="mailto:marco.bellan97@gmail.com" class="btn-floating btn-large red">
+              <i class="large material-icons">email</i>
+            </a>
+        </div>
+        
+        <div class="container">
+        
+        <!--Personal information-->
+            <div class="card-panel z-depth-4">
+                <div class="row">
+                    <div class="col offset-s1 s10">
+                        <h2 class="center-align">Marco Bellan</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col offset-s1 s10">
+                        <div class="row valign-wrapper">
+                            <div class="col s5">
+                              <canvas id="myChart" width="400" height="400"></canvas>
+								<script>
+								var ctx = document.getElementById("myChart").getContext('2d');
+								new Chart(
+									ctx,
+									{
+										"type":"doughnut",
+										"data":
+										{
+											"labels":["Mathematics","Numerical Analysis","C++","Python","Machine Learning"],
+											"datasets":[{
+												"label":"Specific Skillset",
+												"data":[15,35,15,20,15],
+												"backgroundColor":[
+													"rgb(3, 39, 90)",
+													"rgb(26, 125, 215)",
+													"rgb(242, 184, 9)",
+													"rgb(243, 116, 2)",
+													"rgb(243, 70, 5)"
+												]
+											}]
+										},
+										"options":
+										{
+											rotation:-1.05,
+											legend: {
+												display: true,
+												position: 'bottom',
+											},
+											title: {
+												display:true,
+												fontFamily: 'Roboto',
+												fontSize: 16,
+												text:'Areas of Expertise'
+											},
+                                            animation: {
+                                                "duration" : 1000
+                                            },
+                                            tooltips: {
+                                                "bodyFontFamily":"Roboto",
+                                                "position":"nearest"
+                                            }
+										}
+									}
+								);
+								</script>
+                            </div>
+                            <div class="col s7">
+                                <!--Birthday-->
+                                <div class="row">
+                                    <div class="col s11 right-align">
+                                        26th September 1997
+                                    </div>
+                                    <i data-position="right" data-delay="50" data-tooltip="Birthday" class="tooltipped col s1 material-icons">cake</i>
+                                </div>
+                                <!--Location-->
+                                <div class="row">
+                                    <div class="col s11 right-align">
+                                        Busto Arsizio, Italy
+                                    </div> 
+                                    <i data-position="right" data-delay="50" data-tooltip="Residence" class="tooltipped col s1 material-icons">public</i>
+                                </div>
+                                <!--Availability-->
+                                <div class="row">
+                                    <div class="col s11 right-align">
+                                        From 03/2021
+                                    </div>
+                                    <i data-position="right" data-delay="50" data-tooltip="Availability" class="tooltipped col s1 material-icons">work</i>
+                                </div>
+                                <!--Email-->
+                                <div class="row">
+                                    <div class="col s11 right-align">
+                                        <a target="_blank" href="mailto:marco.bellan97@gmail.com">marco.bellan97@gmail.com</a>
+                                    </div>
+                                    <i data-position="right" data-delay="50" data-tooltip="Email" class="tooltipped col s1 material-icons">email</i>
+                                </div>
+                                <!--Phone-->
+                                <div class="row">
+                                    <div class="col s11 right-align">
+                                        +39 348 5783906
+                                    </div>
+                                    <i data-position="right" data-delay="50" data-tooltip="Mobile" class="tooltipped col s1 material-icons">phone</i>
+                                </div>
+                                <!--Github-->
+                                <div class="row">
+                                    <div class="col s11 right-align">
+                                        <a target="_blank" href="https://github.com/MarcoROG">GitHub</a>
+                                    </div> 
+                                    <i data-position="right" data-delay="50" data-tooltip="GitHub" class="tooltipped col s1 material-icons">web</i>
+                                </div>
+                                <!--Linkedin-->
+                                <div class="row">
+                                    <div class="col s11 right-align">
+                                        <a target="_blank" href="https://www.linkedin.com/in/marco-bellan-296878104/">LinkedIn</a>
+                                    </div>
+                                    <i data-position="right" data-delay="50" data-tooltip="LinkedIn" class="tooltipped col s1 material-icons">web</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col flow-text offset-s1 s10">
+                        I'm a passionate student with a deep interest for computational mathematics and the dream of turning this passion into a positive contribution for humanity.<br>
+                        My love for solving problems through elegant and surprising ways led me to pursue studies in Applied Mathematics, while still taking part to many Open Source projects to continuosly put what I learn in practice.<br>
+                        I think the broad skillset built through my studies and projects will prove beneficial in a position where both techical expertise and creative problem-solving are central.<br>
+                    </p>
+                </div>
+            </div>
+        
+        <!--Education-->
+            <div class="card-panel z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col offset-s1 s1">
+                        <i class="left-align medium material-icons">school</i>
+                    </div>
+                    <div class="col offset-s3 s3">
+                        <h3>Education</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col offset-s1 s10">
+                        <blockquote>
+                            <h5>Life is the means by which the universe understands itself.</h5>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="col offset-s1 s10 collapsible popout" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">functions</i>
+                                MSc Applied Mathematics
+                                <span class="new badge green  " data-badge-caption="30/30 - University of Milan - 2019-In progress"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="green white-text chip">Numerical Methods for PDEs</div>
+                                        <div class="green white-text chip">PDEs</div>
+                                        <div class="green white-text chip">Numerical Linear Algebra</div>
+                                        <div class="green white-text chip">C++</div>
+                                        <div class="green white-text chip">MATLAB</div>
+                                        <div class="green white-text chip">Algorithms</div>
+                                        <div class="green white-text chip">Game Theory</div>
+                                        <div class="green white-text chip">Decision Theory</div>
+                                        <div class="green white-text chip">Scientific Computing</div>
+                                        <div class="green white-text chip">Mathematical Modelling</div>
+                                        <div class="green white-text chip">Dynamical Systems</div>
+                                        <div class="green white-text chip">Hamiltonian Systems</div>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    I have focused on numerical methods for PDEs. Topics such as adaptivity, mixed formulations and domain decomposition were covered.
+                                    My remaining courses revolved around Mathematical Physics and Analysis.</br>
+                                    The majority of courses had programming assignments and a final project to be presented and discussed.
+                                    I also followed lectures at the Informatics department, covering topics such as game and decision theory.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">functions</i>
+                                BSc Applied Mathematics
+                                <span class="new badge green  " data-badge-caption="108/110 - University of Milan - 2016-2019"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="light-blue white-text chip">"Highly Meritable Student" grant</div>
+                                        <div class="light-blue white-text chip">Horizon 2020 project</div>
+                                        <div class="green white-text chip">Algorithms</div>
+                                        <div class="green white-text chip">Numerical Analysis</div>
+                                        <div class="green white-text chip">Analysis</div>
+                                        <div class="green white-text chip">Geometry</div>
+                                        <div class="green white-text chip">Mathematical Physics</div>
+                                        <div class="chip">Abstract Algebra</div>
+                                        <div class="chip">Probability</div>
+                                        <div class="green white-text chip">C++</div>
+                                        <div class="green white-text chip">MATLAB</div>
+                                        <div class="chip">Physics</div>
+                                        <div class="chip">Topology</div>
+                                        <div class="green white-text chip">Linear Algebra</div>
+                                        <div class="green white-text chip">Scientific Computing</div>
+                                        <div class="green white-text chip">Mathematical Modelling</div>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    The degree covers a wide set of subfields of Mathematics. My main focus was numerical analysis and algorithms.<br>
+                                    A great importance has been given to mathematical reasoning and proofs in opposition to mere computational exercises.<br>
+                                    Formats included written, oral and laboratory exams, as well as group projects and a final seminar about Numerical Methods for Hyperbolic PDEs.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">search</i>
+                                Liceo Scientifico Applied Sciences
+                                <span class="new badge green  " data-badge-caption="100/100 - High School, Busto Arsizio - 2011/2016"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="light-blue white-text chip">Grade: 100/100</div>
+                                        <div class="light-blue white-text chip">Thesis: Deed Learning's impact on the development of AI</div>
+                                        <div class="light-blue white-text chip">Merit Scholarship</div>
+                                        <div class="light-blue white-text chip">Enrico Dell'Acqua award</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="green white-text chip">Mathematics</div>
+                                        <div class="green white-text chip">Physics</div>
+                                        <div class="chip">Chemistry</div>
+                                        <div class="green white-text chip">Computer Science</div>
+                                        <div class="green white-text chip">Lab Activities</div>
+                                        <div class="chip">History of Arts</div>
+                                        <div class="chip">History</div>
+                                        <div class="chip">Philosophy</div>
+                                        <div class="chip">Italian Literature</div>
+                                        <div class="chip">English Literature</div>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    The studies provided a solid foundation of humanities and STEM subjects with a particular focus on the scientific method and lab activities.<br>
+                                    My thesis was a small introduction about the recent development of Deep Learning and its possible implications on AI and our everyday lives.<br>
+                                    Albeit very divulgative, the document included the mathematical discussion of standard techniques such as DNNs, CNNs, RNNs and Reinforcement Learning.<br>
+                                    I have taken part to a variety of extracurricular activities, including a group of students managing the school's IT infrastructure and teaching advanced C++ and C# courses.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">speaker_notes</i>Independent learning</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="green white-text chip">Deep Learning</div>
+                                        <div class="green white-text chip">Keras</div>
+                                        <div class="chip">Coursera</div>
+                                        <div class="green white-text chip">R</div>
+                                        <div class="green white-text chip">Machine Learning</div>
+                                        <div class="chip">Unity</div>
+                                        <div class="chip">Game Development</div>
+                                        <div class="green white-text chip">Tensorflow</div><br>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    I highly value learning and I'm always trying to learn more!<br>
+                                    I have taken a number of online courses from Coursera (Machine Learning, Practical Machine Learning) and followed up with online video-courses such
+                                    as de Freitas' "Machine Learning: 2014-2015".
+                                    I also like reading STEM books such as Gregoire's "Professional C++", Gelbaum's "Counterexamples in Analysis" and Goodfellow's "Deep Learning".
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        <!--Work experience-->
+            <div class="card-panel z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col offset-s1 s1">
+                        <i class="left-align medium material-icons">work</i>
+                    </div>
+                    <div class="col offset-s1 s9">
+                        <h3>Professional Experience and Projects</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="col offset-s1 s10 collapsible popout" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">format_list_bulleted</i>
+                                Datasinc
+                                <span class="new badge green  " data-badge-caption="R&D Job 10/2019-03/2020"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="light-blue white-text chip">NLP</div>
+                                        <div class="light-blue white-text chip">Startup</div>
+                                        <div class="green white-text chip">Deep Learning</div>
+                                        <div class="green white-text chip">Python</div>
+                                        <div class="green white-text chip">NumPy</div>
+                                        <div class="green white-text chip">Jupyter</div>
+                                        <div class="green white-text chip">Docker</div>
+                                        <div class="green white-text chip">AWS</div>
+                                        <div class="green white-text chip">Research and Development</div>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    The aim of the startup was to OCR, cluster, categorize and mine financial and legal documents. The main customers were banks interested in managing their huge corpus of documents.
+                                    My task has been to implement various proof of concept solutions for each of these functionalities, jumping back and forward from research papers to implementation.
+                                    Once the performance was deemed satisfactory on toy datasets, the implementation would be industrialized, dockerized and deployed in an AWS infrastructure.
+                                    The main approaches included Document Embedding techniques and clustering / soft similarity detection.
+                                </span>
+                            </div>
+                        </li>         
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">flash_on</i>
+                                Horizon 2020
+                                <span class="new badge green  " data-badge-caption="Research 2018"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="light-blue white-text chip">Research Project</div>
+                                        <div class="green white-text chip">Tensorflow</div>
+                                        <div class="green white-text chip">Cluster computing</div>
+                                        <div class="green white-text chip">Article</div><br>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    Alongside a group of Professors and students, we have taken part to an Horizon 2020 challenge about the forecasting of energy production and consumption.
+                                    To tackle the problem, we used Tensorflow, and we deployed the code on INDACO: University of Milan's computing cluster.
+                                    An article "The Experts Method for the prediction of
+periodic multivariate time series of high dimension" has been written and accepted for presentation at SIS 2019: Smart Statistics for Smart Applications, held on 18/06/2019 in Milan.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">enhanced_encryption</i>
+                                OpenMined
+                                <span class="new badge green  " data-badge-caption="OpenSource 09/2017-10/2017"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="light-blue white-text chip">Open Source</div>
+                                        <div class="green white-text chip">Deep Learning</div>
+                                        <div class="green white-text chip">Python</div>
+                                        <div class="green white-text chip">NumPy</div>
+                                        <div class="green white-text chip">Jupyter</div>
+                                        <div class="green white-text chip">Docker</div>
+                                        <div class="green white-text chip">Homomorpic Encryption</div>
+                                        <div class="green white-text chip">Numerical Analysis</div>
+                                        <div class="green white-text chip">Research and Development</div>
+                                        <div class="green white-text chip">Polynomial Nonlinearities</div><br>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    My contribution on OpenMined regards PySyft: a repository which aims to provide Homomorphically Encrypted deep learning.<br>
+                                    I have initially worked on tracking and reducing HE noise by using efficient computations.<br>
+                                    My focus shifted towards nonlinearities and polynomial activations: their numerical stability, noise growth, modelling power and gradient flow.<br>
+                                    Empirical tests in unencrypted settings have been carried out on small datasets and architectures (MNIST, CIFAR10) with promising results.<br>
+                                    I have submitted various demo notebooks and held a small demonstration during a live community update.<br>
+                                    A Python interface allowing polynomial approximation, evaluation and encryption has been developed.<br>
+                                    Unfortunately, most of the functionality has been lost due to a project rewrite by moving from HE to MPC.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">videogame_asset</i>
+                                Banshee Engine
+                                <span class="new badge green  " data-badge-caption="OpenSource 05/2016-09/2017"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="light-blue white-text chip">Open Source</div>
+                                        <div class="green white-text chip">C++</div>
+                                        <div class="green white-text chip">C#</div>
+                                        <div class="chip">MTuner</div>
+                                        <div class="chip">Profiling</div>
+                                        <div class="chip">ReSharper</div>
+                                        <div class="chip">CMake</div>
+                                        <div class="green white-text chip">Async programming</div><br>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    Banshee is a modern, powerful and lightweight game engine built using modern C++14 extensible through a C# API.<br>
+                                    My contributions ranged from various features and bugfixes on the editor, such as 3D snapping and object inspection,
+                                    to optimizations and leak fixes on the core memory allocation routines.<br>
+                                    Additional contributions include exploratory work on porting the build process to Linux and functionality to allow for Async assets importing.<br>
+                                    I have also built its website using OctoberCMS, Laravel and SemanticUI.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">phonelink</i>
+                                Open Electronics
+                                <span class="right-align new badge green  " data-badge-caption="Consulting 05/2017-Present"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <a target="_blank" href="https://www.open-electronics.org/the-drink-maker-open-sourcing-your-cocktail/"><div class="light-blue white-text chip">Drink Maker</div></a>
+                                        <div class="light-blue white-text chip">San Francisco Maker Faire</div>
+                                        <div class="green white-text chip">C++</div>
+                                        <div class="green white-text chip">Python</div>
+                                        <div class="green white-text chip">Docker</div>
+                                        <div class="chip">IoT</div>
+                                        <div class="chip">PHP</div>
+                                        <div class="chip">Laravel</div>
+                                        <div class="green white-text chip">Published</div>
+                                        <div class="green white-text chip">Technical Divulgation</div><br>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    Open Electronics, and its italian printed version "Elettronica In", are divulgative electronics magazines.<br>
+                                    My task was to build small proof-of-concept projects involving IoT and embedded systems such as Raspberry Pi and Arduino using Python, PHP and C++.<br>
+                                    The process included the design and the realization of both the electronics and the software. A divulgative piece would also be written and published.<br>
+                                    Collaboration and peer reviewing with other writers were frequent.<br>
+                                    The "RandA Photo Sharing" showcase for the RandA board was present at the San Francisco Maker Faire in 2015.<br>
+                                    <a target="_blank" href="https://www.open-electronics.org/the-drink-maker-open-sourcing-your-cocktail/">Example project: Drink Maker</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">phone_android</i>
+                                6GO s.r.l.
+                                <span class="right-align new badge green  " data-badge-caption="Internship 07/2015-09/2015"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="green white-text chip">C#</div>
+                                        <div class="chip">Database</div>
+                                        <div class="chip">AT</div>
+                                        <div class="chip">GSM</div><br>
+                                    </div>
+                                </div>
+                                <span class="flow-text">
+                                    C# internship in which I handled serial communications with GSM models in order to read, parse, authenticate incoming SMS and schedule replies.<br>
+                                    I took part to the design process and to some of the meetings with customers.
+                                </span>
+                            </div>
+                        </li>        
+                    </ul>
+                </div>
+            </div>
+            
+            <!--Awards-->
+            <div class="card-panel z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col offset-s1 s1">
+                        <i class="left-align medium material-icons">class</i>
+                    </div>
+                    <div class="col offset-s2 s8">
+                        <h3>Awards & Achievements</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="col offset-s1 s10 collapsible popout" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">translate</i>
+                                IELTS Academic
+                                <span class="new badge green  " data-badge-caption="8.5/9.0 C2"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    I have achieved a score of 8.5 out of 9.0 in the IELTS academic certificate test, which is equivalent to a Cambridge C2 category.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">all_inclusive</i>
+                                Maths, Physics and Chemistry competitions
+                                <span class="new badge green  " data-badge-caption="National level"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    I have taken part to many STEM competitions.<br>
+                                    Starting from a local challenge, the winners would move to the regional and, eventually, national level.<br>
+                                    I have reached the regional level in Physics and Chemistry competitions during High School and the national level in Maths competitions both in High and Middle School.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">card_membership</i>
+                                &quot;Highly Meritable Student&quot; grant
+                                <span class="new badge green  " data-badge-caption="a.y. 2016-2017-2018"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    This reduction in fees is awarded to university students who have achieved a good academic performance while completing their exams earlier than scheduled.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">card_membership</i>
+                                &quot;Enrico Dell&rsquo;Acqua&quot; award
+                                <span class="new badge green  " data-badge-caption="a.y 2015-2016"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    This local recognition for high school students is based on academic merit and success in extracurricular activities.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">card_membership</i>
+                                Academic merit scholarships
+                                <span class="new badge green  " data-badge-caption="a.y 2010-2011 and .2014-2015"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    I've been awarded with two scholarships for my academic performance during High School and Middle School.<br>
+                                    The metrics included grades averages and the final graduation score.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">favorite</i>
+                                CPR and Defibrillator operator
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    After a brief course followed by an exam held by the local ER authorities, I'm abilitated at performing cardiopulmonary resuscitation and
+                                    using semi automatic defibrillators (AED).
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--Hobbies-->
+            <div class="card-panel z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col offset-s1 s1">
+                        <i class="left-align medium material-icons">weekend</i>
+                    </div>
+                    <div class="col offset-s1 s8">
+                        <h3>Hobbies and well rounded activities</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col offset-s1 s10">
+                        <blockquote>
+                            <h5>Time you enjoy wasting, was not wasted.</h5>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="col offset-s1 s10 collapsible popout" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">music_note</i>
+                                Guitar playing
+                                <span class="new badge green  " data-badge-caption="Villa Pomini, Castellanza"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">I have studied guitar at the conservatory for two years. I still play privately, alone or with friends!</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">local_hospital</i>
+                                Certified blood donor
+                                <span class="new badge green  " data-badge-caption="Busto Arsizio"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">Contributing to society starts from simple acts.<br>Despite being terribly scared by needles, I am a frequent blood donor. My blood type is O+.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">flight</i>
+                                Travelling
+                                <span class="new badge green  " data-badge-caption="6+ countries"></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    Travelling, meeting new people and cultures, visiting and exploring sparks my curiousity.<br>
+                                    My destinations include: a vast area of Italy, Switzerland, France, Spain, Czech Republic, Canaries, England and Scotland.<br>
+                                    All those travels ended with a lot of interesting experiences and some new friends!
+                                </span>
+                                <div class="row">
+                                    <div class="col offset-s2 s8">
+                                        <img style="margin-top: 30px" class="materialboxed" data-caption="Scarborough Castle, 2017" width="650" src="images/yorkshire.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">star</i>Sci-Fi</div>
+                            <div class="collapsible-body">
+                                <span class="flow-text">
+                                    I've grown up consuming Sci-Fi content.<br>
+                                    From pop culture such as Halo, Star Wars and Star Trek to classics such as Asimov's masterpieces.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </div>
+
+    </body>
+  </html>
